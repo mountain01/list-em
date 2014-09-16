@@ -29,7 +29,8 @@ public class GrepReader extends FileReader implements Grep {
 				matches.add(input);
 			}
 		}
-
-		result.put(file,matches);
+        if(matches.size() != 0){
+            result.put(file,matches);
+        }
 	};
 }
