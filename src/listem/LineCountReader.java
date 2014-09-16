@@ -16,7 +16,7 @@ public class LineCountReader extends FileReader implements LineCounter{
 	}
 
 	void stuf(File file, Scanner in){
-		int lineCount = 1;
+		int lineCount = 0;
 		while(in.hasNextLine()){
             in.nextLine();
 			lineCount++;
